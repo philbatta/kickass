@@ -8,11 +8,17 @@ body {
 	height: auto;
 	margin-left:auto;
 	margin-right:auto;
+	position: relative;
 }
 
-.nav-bar{
-	padding-bottom: 1em;
-	height: auto;
+.nav-bar {
+	width: 892px;
+	height: 50px;
+	position: fixed;
+	left:185px;
+	top:0px;
+	background-color:white;
+	z-index:2;
 }
 
 .nav-menu {
@@ -20,28 +26,91 @@ body {
 	text-transform: uppercase;
 	font-weight: bold;
 	font-size: 15px;
-	padding-top: .40em;
+	padding-top: 1em;
+}
+
+.nav-bar img {
+	padding-top: .65em;
 }
 
 .nav-menu span {
 	padding: 0em 1em;
 }
 
-.splash{
+.splash {
 	position: relative;
+	margin-top: 60px;
 }
 
 .splash>img:nth-of-type(2) {
-	position:absolute;
-	right:85px;
-	top:50px;
+	position: absolute;
+	right: 85px;
+	top: 50px;
 	z-index: 1;
-	float:none;
+	float: none;
+}
+
+.clear{
+	clear:both;
+}
+
+h2 {
+	text-align:center;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+.testimonials{
+	position:relative;
+	width: 360px;
+	height: auto;
+	margin-left:60;
+	float: left;
+}
+
+.testimonials p:nth-of-type(1) {
+	font-style: italic;
+	font-family: serif;
+	font-weight: lighter;
+	font-size: 1.5em;
+	float: left;
+	margin:0 0 auto auto;
+}
+
+.testimonials img {
+	border-radius: 50%;
+	border: 2px solid gray;
+	position: absolute;
+	left:0;
+	bottom:0;
+}
+
+.testimonials p:nth-of-type(2) {
+	font-weight: bold;
+	text-indent: 4em;
+	position:relative;
+	bottom:-10px;
+	left:0px;
+}
+
+.testimonials p:nth-of-type(3) {
+	font-weight: lighter;
+	color: gray;
+	text-indent: 4em;
+	margin: 0;
+	position:relative;
+	bottom:7px;
+	left:0px;
+}
+
+
 }
 
 </style>
 </head>
 <body>
+	<div>
+	</div>
 	<div class="nav-bar">
 		<div class="nav-menu">
 			<span>Tour</span>
@@ -58,15 +127,44 @@ body {
 		<img src="images/headline.png">
 	</div>
 
+<div class="clear"></div>
 
+	<h2>
+		What People are saying...
+	</h2>
 
-Enter at your peril, past the vaulted door. Impossible things will happen that the world's never seen before. In Dexter's laboratory lives the smartest boy you've ever seen.
-Dexter
-Young Boy Genius
+	<div>
+		<div class="testimonials">
+			<p>
+				Enter at your peril, past the vaulted door. Impossible things will happen that the world's never seen before. In Dexter's laboratory lives the smartest boy you've ever seen.
+			</p>
+			<img src="images/dexter.jpg">
+			<div class="clear"></div>
+			<p>
+				Dexter
+			</p>
+			<p>
+				Young Boy Genius
+			</p>
+			
+		</div>
 
-Don't go to bed, with no price on your head. No, no, don't do it. Fon't do the crime, if you can't do the time, yeah, don't do it. And keep your eye on the sparrow.
-Baretta
-New Jersey police officer
+		<div class="testimonials">
+			<p>
+				Don't go to bed, with no price on your head. No, no, don't do it. Fon't do the crime, if you can't do the time, yeah, don't do it. And keep your eye on the sparrow.
+			</p>
+			<div class="clear"></div>
+			<img src="images/baretta.jpg">
+			<p>
+				Baretta
+			</p>
+			<p>
+				New Jersey police officer
+			</p>
+		</div>
+	</div>
+
+<div class="clear"></div>
 
 
 Product
@@ -98,6 +196,16 @@ Twitter
 LinkedIn
 Vimeo
 YouTube
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</p>
 
 </body>
 </html>
