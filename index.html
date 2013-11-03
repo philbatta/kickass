@@ -107,6 +107,28 @@ h2 {
 	background-color:gray;
 }
 
+#splash{
+   	background-image: url('images/confetti.jpg');
+   	background-repeat: no-repeat;
+   	z-index:1;
+   	height: 540px;
+   	width: 100%;
+   	position: relative;
+   	margin-top:60px;
+   	background-color: yellow;
+}
+
+#splash::after{
+	content: url('images/headline.png');
+   	background-repeat: no-repeat;
+   	z-index:2;
+   	height: 250px;
+   	width: 720px;
+   	position: absolute;
+   	right:85;
+   	top:50;
+   	opacity:.9;
+   	-webkit-filter: drop-shadow(5px 5px 3px #FF0000); 
 }
 
 </style>
@@ -125,6 +147,14 @@ h2 {
 		</div>	
 	</div>
 
+	<div id="splash">
+	</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 	<div class="splash">
 		<img src="images/confetti.jpg">
 		<img src="images/headline.png">
